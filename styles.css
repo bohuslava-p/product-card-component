@@ -115,7 +115,7 @@ body {
 }
 
 .cta-button::before {
-    content: url(/images/icon-cart.svg);
+    content: url(./images/icon-cart.svg);
     width: 1em;
     height: 1.2em;
     display: inline-block;

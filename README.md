@@ -37,4 +37,4 @@ Users should be able to:
 ### What I learned
 
 - Solidified my knowledge of Flexbox
-- Usage of ```<picture>``` tag in responsive layouts 
+- Learned about ```<picture>``` tag in responsive layouts 
