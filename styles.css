@@ -112,6 +112,7 @@ body {
 .previous-price {
     text-decoration: line-through;
     color: var(--neutral2);
+    font-size: 0.929em;
 }
 
 .cta-button::before {
