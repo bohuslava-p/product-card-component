@@ -13,8 +13,6 @@
     --neutral2: hsl(228, 12%, 48%);
     /* card bg, cta text*/
     --neutral3: hsl(0, 0%, 100%);
-
-    font-size: 14px;
 }
 
 * {
@@ -31,6 +29,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--primary2);
     font-weight: 500;
+    font-size: .875rem;
 }
 
 /* === Card styling === */
@@ -45,14 +44,14 @@ body {
 
 .card {
     display: flex;
-    max-width: 600px;
+    max-width: 37.5rem;
     background-color: var(--neutral3);
-    border-radius: 0.715rem;
+    border-radius: .625rem;
 }
 
 .card-text-area {
     width: 50%;
-    padding: 2.29em;
+    padding: 2rem;
 }
 
 .img-container {
@@ -61,7 +60,7 @@ body {
 
 .card-img {
     vertical-align: middle;
-    border-radius: 0.715rem 0 0 0.715rem;
+    border-radius: .625rem 0 0 .625rem;
 }
 
 .card-header {
@@ -74,8 +73,8 @@ body {
     font-family: 'Fraunces', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 2.28em;
-    line-height: 1em;
+    font-size: 2rem;
+    line-height: 1;
 }
 
 .card-header h1 {
@@ -85,15 +84,15 @@ body {
 
 .card-header p {
     font-weight: 500;
-    font-size: 0.857em;
-    letter-spacing: 0.417em;
+    font-size: .75rem;
+    letter-spacing: .417em;
     text-transform: uppercase;
     margin-bottom: 1.667em;
     color: var(--neutral2);
 }
 
 .card-body {
-    line-height: 1.643em;
+    line-height: 1.643;
     color: var(--neutral2);
     margin-bottom: 2.071em;
 }
@@ -106,13 +105,13 @@ body {
 
 .current-price {
     color: var(--primary1);
-    margin-right: 0.594em;
+    margin-right: .594em;
 }
 
 .previous-price {
     text-decoration: line-through;
     color: var(--neutral2);
-    font-size: 0.929em;
+    font-size: .813rem;
 }
 
 .cta-button::before {
@@ -120,7 +119,7 @@ body {
     width: 1em;
     height: 1.2em;
     display: inline-block;
-    margin-right: 0.8em;
+    margin-right: .8em;
 }
 
 .cta-button {
@@ -131,48 +130,56 @@ body {
     text-align: center;
     text-decoration: none;
     background-color: var(--primary1);
-    line-height: 1.2em;
+    line-height: 1.2;
     color: var(--neutral3);
     font-weight: 700;
     padding: 1.1em;
-    border-radius: 0.571em;
+    border-radius: .571em;
 }
 
 .cta-button:hover,
 .cta-button:active {
     background: var(--primary1-active);
     cursor: pointer;
-} 
+}
 
-@media screen and (max-width: 600px){
-    body{
-        padding: 1.2em;
+@media screen and (max-width: 37.5em) {
+    body {
+        padding: 1rem;
     }
-    .cards-container{
+
+    .cards-container {
         flex-direction: column;
         justify-content: flex-start;
     }
-    .card{
+
+    .card {
         flex-direction: column;
     }
+
     .card-text-area {
         width: 100%;
         padding: 1.714rem;
     }
-    .card-header h1{
+
+    .card-header h1 {
         margin-bottom: .5em;
     }
-    .card-body{
+
+    .card-body {
         margin-bottom: 1.714em;
     }
+
     .img-container {
         width: 100%;
     }
+
     .card-img {
         vertical-align: middle;
-        border-radius: 0.715rem 0.715rem 0 0;
+        border-radius: .625rem .625rem 0 0;
     }
-    .prices{
+
+    .prices {
         margin-bottom: 1.429em;
     }
 }
